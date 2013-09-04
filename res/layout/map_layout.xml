@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/map_title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style">
+        <Button android:layout_gravity="left|center" android:id="@+id/map_option_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_options_button" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hopstop_header_logo" />
+            <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/map_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/maps" />
+        </LinearLayout>
+        <com.hopstop.ui.HopStopMapGoButton android:layout_gravity="right|center" android:id="@+id/map_go_btn" android:text="Go" style="@style/search_blue_button_style" />
+    </FrameLayout>
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/GetMapLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/map_enter_address_area" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_below="@+id/map_title_bar">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/map_address" android:layout_width="fill_parent" android:layout_height="50.0dip" android:shadowRadius="3.0">
+                    <EditText android:textSize="14.0sp" android:layout_gravity="top" android:id="@+id/map_enter_address" android:paddingRight="70.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:adjustViewBounds="true" android:hint="@string/enter_address" android:layout_centerInParent="true" />
+                    <com.hopstop.ui.HopStopGPSImageButtonOnMap android:layout_gravity="right" android:id="@+id/map_address_cur_location" android:background="@*android:color/transparent" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/search_current_location_selector" android:adjustViewBounds="true" android:layout_toLeftOf="@+id/map_address_history" />
+                    <com.hopstop.ui.HopStopImageButtonOnMap android:layout_gravity="right" android:id="@+id/map_address_history" android:background="@*android:color/transparent" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/search_contacts_selector" android:adjustViewBounds="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/spinner_linearlayout_map" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@+id/map_city_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/city_spinner_title" android:layout_weight="1.0" />
+                    <Spinner android:id="@+id/map_county_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/map_result_image_with_buttons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/map_enter_address_area" />
+            <include android:id="@+id/ad_ll" layout="@layout/ad_layout" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

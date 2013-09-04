@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/MapOptionLayout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <RelativeLayout android:id="@+id/map_option_bar" style="@style/app_header_style">
+        <Button android:layout_gravity="left|center" android:id="@+id/back_btn_on_map_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="top|center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hopstop_header_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:id="@+id/option_title_bar" android:text="@string/map_options_title" android:layout_below="@+id/logo" style="@style/TitleText" />
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:id="@+id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/subway_or_bus" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/map_overlay_option" style="@style/OptionTitleText" />
+                <RadioGroup android:orientation="vertical" android:id="@+id/map_option_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/show_subway_stations" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_subway_stations" />
+                    <RadioButton android:id="@+id/show_bus_stations" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_bus_stations" />
+                    <RadioButton android:id="@+id/show_subway_and_bus_stations" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_subway_and_bus_stations" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/direction_to_from" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="#ff000000" android:gravity="center" android:id="@+id/directions_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/directions_to_here" />
+                <Button android:textColor="#ff000000" android:gravity="center" android:id="@+id/directions_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/directions_from_here" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_layout" />
+</LinearLayout>

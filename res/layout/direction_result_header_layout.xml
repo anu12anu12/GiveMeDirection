@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/direction_header" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/step_total_tile" />
+    <include layout="@layout/results_divider" />
+    <include android:id="@+id/step_start_address" layout="@layout/step_start" />
+    <include layout="@layout/results_divider" />
+    <include android:id="@+id/step_end_address" layout="@layout/step_start" />
+    <include layout="@layout/results_divider" />
+    <include android:id="@+id/list_vehicle_stops_layout_ref" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/list_vehicle_stops_layout" />
+</LinearLayout>

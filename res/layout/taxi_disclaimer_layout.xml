@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="#ff6e6e6e" android:text="@string/taxi_disclaimer" style="@style/MatchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

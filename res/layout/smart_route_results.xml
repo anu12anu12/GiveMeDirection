@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:layout_gravity="center" android:id="@+id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Route" />
+        </LinearLayout>
+        <Button android:layout_gravity="right|center" android:id="@+id/header_right_btn" android:text="Skip" style="@style/grey_button_style" />
+        <ImageView android:layout_gravity="left|center" android:id="@+id/header_left_btn" android:paddingLeft="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_header_info" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ListView android:id="@+id/smart_route_result_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:layout_weight="1.0" style="@style/schedule_list_white_bg" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:indeterminate="true" />
+        <TextView android:textColor="@*android:color/black" android:id="@+id/content_not_available_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@+id/ads" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ad_tab_layout" />
+</LinearLayout>

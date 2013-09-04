@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/page_white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/departure_bar" style="@style/app_header_style">
+        <Button android:layout_gravity="left|center" android:id="@+id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" style="@style/grey_button_style" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/departure_title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_selection_page_depart_title" />
+        </LinearLayout>
+        <Button android:layout_gravity="right|center" android:id="@+id/done_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+    </FrameLayout>
+    <ScrollView android:id="@+id/scroll_view_departure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/departure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupDepartureOrArrive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:weightSum="2.0">
+                <RadioButton android:id="@+id/radioButtonDepartAt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Depart at" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonArriveBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arrive by" android:layout_weight="1.0" />
+            </RadioGroup>
+            <TextView android:id="@+id/title_departure" android:paddingLeft="5.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/departure_title_label" style="@style/OptionTitleText" />
+            <Spinner android:entries="@array/array_days" android:id="@+id/day_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:id="@+id/title_departure_time" android:paddingLeft="5.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/departure_title_time_label" style="@style/OptionTitleText" />
+            <TimePicker android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/timepicker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_alignParentBottom="true" layout="@layout/ad_layout" />
+</LinearLayout>

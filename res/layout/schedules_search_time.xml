@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/departure_bar" android:clickable="true" style="@style/app_header_style">
+        <Button android:layout_gravity="left|center" android:id="@+id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/logo_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="top|center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/header_title" android:layout_below="@+id/logo" style="@style/SchedulesTitleText" />
+        </LinearLayout>
+        <Button android:layout_gravity="right|center" android:id="@+id/done_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+    </RelativeLayout>
+    <ScrollView android:layout_weight="1.0" style="@style/MatchWrap">
+        <LinearLayout android:orientation="vertical" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" style="@style/MatchMatch">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupDepartureOrArrive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:weightSum="2.0">
+                <RadioButton android:id="@+id/radioButtonDepartAt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Depart at" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonArriveBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arrive by" android:layout_weight="1.0" />
+            </RadioGroup>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/schedules_departure_day_time" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" style="@style/MatchMatch">
+                <Spinner android:id="@+id/schedule_departure_day_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TimePicker android:id="@+id/schedule_departure_time_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/include2" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ad_layout" />
+</LinearLayout>

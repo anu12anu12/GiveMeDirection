@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/attribution_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/official_permission_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:id="@+id/more_transit" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Do you want to see more transit maps added? Let us know!" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/send_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Send Feedback" android:layout_weight="1.0" />
+                <Button android:id="@+id/close_poweredby" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Close" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

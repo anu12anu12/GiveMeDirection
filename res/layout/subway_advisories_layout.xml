@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/service_advisor_layout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/map_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SERVICE_ADVISOR" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/subway_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ListView android:id="@+id/subway_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/hopstop_light" android:gravity="center" android:layout_gravity="center" android:id="@+id/subway_list_empty_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/NEED_CONNECTIVITY_TO_FIND_ADVISORIES" android:layout_weight="1.0" />
+    </FrameLayout>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

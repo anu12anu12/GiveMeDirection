@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_small_fnt">15.0sp</dimen>
+    <dimen name="font_size_med_fnt_bold">16.0sp</dimen>
+    <dimen name="font_size_content_fnt">20.0sp</dimen>
+    <dimen name="font_size_content_fnt_bold">20.0sp</dimen>
+    <dimen name="font_size_title_fnt">24.0sp</dimen>
+    <dimen name="font_size_large_bold_fnt">22.0sp</dimen>
+    <dimen name="find_view_distance_height">60.0dip</dimen>
+    <dimen name="find_view_line_margin">15.0dip</dimen>
+    <dimen name="find_view_left_padding">15.0dip</dimen>
+    <dimen name="title_left_padding">15.0dip</dimen>
+    <dimen name="list_item_height">60.0dip</dimen>
+    <dimen name="content_right_padding">10.0dip</dimen>
+</resources>

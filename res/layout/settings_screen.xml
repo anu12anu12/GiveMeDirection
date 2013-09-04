@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/FeedbackLayout" android:background="@color/page_white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <include layout="@layout/header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@+id/spinner_linearlayout_pref" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/feedback_pref_city" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@+id/pref_city_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:prompt="@string/pref_city_spinner_title" android:layout_weight="1.0" style="@style/city_style" />
+                    <Spinner android:id="@+id/pref_county_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:prompt="@string/pref_county_spinner_title" android:layout_weight="1.0" style="@style/county_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distance" />
+            <RadioGroup android:orientation="vertical" style="@style/MatchWrap">
+                <RadioButton android:id="@+id/settings_distance_miles" android:text="In Miles" style="@style/MatchWrap" />
+                <RadioButton android:id="@+id/settings_distance_kilometers" android:text="In Kilometers" style="@style/MatchWrap" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

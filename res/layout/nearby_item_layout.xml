@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/nearby_item_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/nearby_item_layout_left" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_size_content_fnt" android:ellipsize="marquee" android:gravity="left" android:layout_gravity="center_vertical" android:id="@*android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_walking" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/nearby_item_layout_right" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DIRECTION_TO" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/DefaultCitySelectionLayout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <FrameLayout android:id="@+id/widget77" style="@style/app_header_style">
+        <ImageView android:layout_gravity="left|center" android:id="@+id/widget217" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/hopstop_header_logo" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="#fff1f1f1" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ff666666" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Welcome to HopStop!" style="@style/text_shadow_white_down" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff969696" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="The only public transit app you'll ever need." style="@style/text_shadow_white_down" />
+        </LinearLayout>
+        <LinearLayout style="@style/search_address_divider_style" />
+        <LinearLayout style="@style/search_address_divider_shadow_style" />
+        <LinearLayout android:orientation="vertical" android:background="#fff1f1f1" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff666666" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Select your default city" style="@style/text_shadow_white_down" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="You can change this later by visiting Settings" style="@style/text_shadow_white_down" />
+            <LinearLayout android:id="@+id/spinner_linearlayout_pref" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="0.0dip" style="@style/city_county_container_style">
+                <Spinner android:id="@+id/pref_city_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:prompt="@string/pref_city_spinner_title" android:layout_weight="1.0" style="@style/city_style" />
+                <Spinner android:id="@+id/pref_county_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:prompt="@string/pref_county_spinner_title" android:layout_weight="1.0" style="@style/county_style" />
+            </LinearLayout>
+            <Button android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@+id/default_city_done" android:background="@drawable/default_city_selection_button_selector" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="Continue" style="@style/text_shadow_white_down" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/ad_layout" />
+</LinearLayout>

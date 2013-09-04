@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/include1" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:indeterminate="true" />
+        <ListView android:id="@+id/cities_list" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:layout_weight="1.0" android:fastScrollEnabled="true" style="@style/schedule_list" />
+        <TextView android:textColor="@*android:color/black" android:id="@+id/text_to_show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@+id/include2" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ad_layout" />
+</LinearLayout>

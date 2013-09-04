@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MatchWrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MatchMatch">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="RadioButtonTheme" >
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+    </style>
+    <style name="RadioButton" >
+        <item name="android:button">@drawable/radio_history_btn</item>
+    </style>
+    <style name="TitleText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="SchedulesTitleText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="OptionTitleText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ServiceAdvisorButton">
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InteractiveMapButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ServiceAdvisorLayout">
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InteractiveMap">
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="OptionsButton">
+        <item name="android:background">@drawable/search_options_bg_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38.0dip</item>
+    </style>
+    <style name="Theme"  />
+    <style name="Theme.Title" parent="@style/Theme">
+        <item name="android:textSize">@dimen/font_size_title_fnt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/hopstop_light</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/title_color</item>
+        <item name="android:paddingLeft">@dimen/title_left_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WhiteTextShadow">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff888888</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="GrayTextShadow">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff343434</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="ShadowForBlackText">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="blue_button_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/blue_button_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="search_blue_button_style" parent="@style/blue_button_style">
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingTop">6.5dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:paddingBottom">7.5dip</item>
+    </style>
+    <style name="grey_button_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/grey_button_color</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">6.5dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">7.5dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="schedule_list">
+        <item name="android:divider">#ffb2b2b2</item>
+        <item name="android:dividerHeight">0.30000007dip</item>
+    </style>
+    <style name="schedule_list_white_bg">
+        <item name="android:divider">@color/smart_route_divider_line_color</item>
+        <item name="android:dividerHeight">0.6dip</item>
+    </style>
+    <style name="direction_list">
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">#ffd6d6d6</item>
+        <item name="android:dividerHeight">0.5dip</item>
+    </style>
+    <style name="address_bar_style">
+        <item name="android:background">@color/top_area_background_color</item>
+    </style>
+    <style name="bottom_options_style">
+        <item name="android:background">@drawable/page_bg</item>
+    </style>
+    <style name="tab_menu_item_container">
+        <item name="android:background">@drawable/tab_item_container</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="tab_menu_item_image">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="tab_menu_item_label">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="list_view">
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+    </style>
+    <style name="app_header_style">
+        <item name="android:background">@drawable/app_header_bg</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">47.0dip</item>
+    </style>
+    <style name="address_input_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/search_address_bg_selectors</item>
+        <item name="android:paddingLeft">34.0dip</item>
+        <item name="android:paddingRight">71.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:autoText">false</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="address_input_pin_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:layout_marginLeft">6.5dip</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="address_input_container_style">
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">9.0dip</item>
+    </style>
+    <style name="city_style">
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/search_city_bg_selector</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:prompt">@string/city_spinner_title</item>
+    </style>
+    <style name="county_style">
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/search_city_bg_selector</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+    </style>
+    <style name="city_county_container_style">
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="address_input_contact">
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/search_contacts_selector</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="address_input_location">
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/search_current_location_selector</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="search_address_divider_style">
+        <item name="android:background">#ffb8b8b8</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="results_divider_style">
+        <item name="android:background">#ffd6d6d6</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="search_address_divider_shadow_style">
+        <item name="android:background">#fffcfcfc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="bottom_part_button_style">
+        <item name="android:background">@drawable/search_options_bg</item>
+    </style>
+    <style name="options_toggle_text_style">
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="no_animation_theme" >
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="no_animation_light_theme" >
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="text_shadow_white_down">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_shadow_black_up">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_shadow_black_right_down">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="smart_route_address_from_to_style" parent="@style/text_shadow_white_down">
+        <item name="android:textColor">@color/smart_route_address_from_to</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">39.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="smart_route_address_text_style" parent="@style/text_shadow_white_down">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/smart_route_address_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">13.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="smart_route_list_item_time">
+        <item name="android:textColor">@color/smart_route_list_item_time</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="smart_route_list_item_price" >
+        <item name="android:textColor">@color/smart_route_list_item_price</item>
+        <item name="android:layout_marginLeft">19.0dip</item>
+        <item name="android:minWidth">60.0dip</item>
+    </style>
+    <style name="smart_route_list_item_duration" >
+        <item name="android:textColor">@color/smart_route_list_item_time</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="results_summary_text_style" parent="@style/text_shadow_white_down">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff555555</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="results_summary_label_style" parent="@style/text_shadow_white_down">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="results_summary_label_container_style">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="results_yext_business_title" >
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="results_blue_button_style" parent="@style/blue_button_style">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">11.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">11.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_weight">2.0</item>
+    </style>
+    <style name="history_toggle_style" parent="@style/text_shadow_black_up">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/toggle_tab_bg</item>
+        <item name="android:paddingTop">6.5dip</item>
+        <item name="android:paddingBottom">7.5dip</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="stations_mode_style" >
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/nearby_stations_modes_bg</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="results_map_yext_title" parent="@style/text_shadow_white_down">
+        <item name="android:textSize">@dimen/font_size_content_fnt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/hs_gray</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="nearby_business_offer_container_style">
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:layout_marginTop">-10.0dip</item>
+    </style>
+    <style name="nearby_business_offer_style" >
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">bottom|left|center</item>
+    </style>
+    <style name="results_address_style" parent="@style/text_shadow_white_down">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/results_address_text_color</item>
+    </style>
+    <style name="yext_enhanced_list_style" >
+        <item name="android:textColor">#ff257ee3</item>
+        <item name="android:background">@drawable/default_city_selection_button_selector</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+</resources>

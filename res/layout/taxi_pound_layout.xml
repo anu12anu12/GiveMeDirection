@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/pound_taxi_big_button" android:background="@drawable/results_pound_taxi_bg_selector" android:paddingLeft="24.0dip" android:paddingTop="10.0dip" android:paddingRight="24.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/results_pound_taxi_icon" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get a Taxi Now" />
+    </LinearLayout>
+    <TextView android:textSize="9.5sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/results_pound_taxi_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:text="@string/results_pound_taxi_disclaimer" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="step_time_hours">
+        <item quantity="other">%d hrs</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="step_time_minutes">
+        <item quantity="other">%d mins</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+</resources>

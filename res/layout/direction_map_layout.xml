@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/dir_map_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@+id/dir_map_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/dir_map_text">
+        <ImageView android:id="@+id/dir_map_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/map_load" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/tab_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout style="@style/app_header_style">
+                <TabWidget android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@*android:id/tabs" android:layout_width="150.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+                <ImageButton android:textColor="@*android:color/white" android:gravity="right" android:layout_gravity="right|center" android:id="@+id/results_share_button" android:paddingTop="7.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+            </RelativeLayout>
+            <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@+id/direction_results" layout="@layout/direction_list_layout" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@+id/mainlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <include android:id="@+id/interactive_map" layout="@layout/interactive_map_view_layout" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

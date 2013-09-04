@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/main_screen_layout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/widget77" style="@style/app_header_style">
+        <ImageView android:layout_gravity="left|center" android:id="@+id/widget217" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/hopstop_header_logo" />
+        <Button android:layout_gravity="right|center" android:id="@+id/go_btn" android:text="Go" style="@style/search_blue_button_style" />
+    </FrameLayout>
+    <ScrollView android:id="@+id/content_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:isScrollContainer="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/DirectionRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/widget221" android:paddingBottom="1.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/address_bar_style">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/address_a" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" style="@style/address_input_container_style">
+                    <EditText android:id="@+id/address_a_edittext" android:hint="@string/edit_start_addr_text_label" android:imeOptions="actionNext" style="@style/address_input_style" />
+                    <ImageView android:id="@+id/address_a_trip" android:src="@drawable/search_marker_green" style="@style/address_input_pin_style" />
+                    <ImageButton android:id="@+id/address_a_history" android:layout_toLeftOf="@+id/address_a_location" style="@style/address_input_contact" />
+                    <ImageButton android:id="@+id/address_a_location" android:layout_alignRight="@+id/address_a" style="@style/address_input_location" />
+                </RelativeLayout>
+                <LinearLayout android:id="@+id/spinner_linearlayout_a" android:layout_width="fill_parent" style="@style/city_county_container_style">
+                    <Spinner android:id="@+id/a_city_spinner" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/city_style" />
+                    <Spinner android:id="@+id/a_county_spinner" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/county_style" />
+                </LinearLayout>
+                <LinearLayout style="@style/search_address_divider_style" />
+                <LinearLayout style="@style/search_address_divider_shadow_style" />
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/address_b" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" style="@style/address_input_container_style">
+                    <EditText android:id="@+id/address_b_edittext" android:hint="@string/edit_dest_addr_text_label" android:imeOptions="actionDone" style="@style/address_input_style" />
+                    <ImageView android:id="@+id/address_b_trip" android:src="@drawable/search_marker_red" style="@style/address_input_pin_style" />
+                    <ImageButton android:id="@+id/address_b_history" android:layout_toLeftOf="@+id/address_b_location" style="@style/address_input_contact" />
+                    <ImageButton android:id="@+id/address_b_location" android:layout_alignRight="@+id/address_b" style="@style/address_input_location" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/spinner_linearlayout_b" android:layout_width="fill_parent" style="@style/city_county_container_style">
+                    <Spinner android:id="@+id/b_city_spinner" android:layout_width="0.0dip" android:text="Chicago" android:prompt="@string/city_spinner_title" android:layout_weight="1.0" style="@style/city_style" />
+                    <Spinner android:id="@+id/b_county_spinner" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/county_style" />
+                </LinearLayout>
+            </TableLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/option_departure" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ffff0000">
+                <Button android:id="@+id/departure" android:layout_marginTop="10.0dip" android:text="@string/main_page_depart_text" style="@style/OptionsButton" />
+                <Button android:id="@+id/option_mode" android:layout_marginTop="10.0dip" android:text="@string/option_mode_title" style="@style/OptionsButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_ad" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/ad_layout" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tab_layout" />
+    </LinearLayout>
+</LinearLayout>

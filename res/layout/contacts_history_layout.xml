@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/history_relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <RelativeLayout android:id="@+id/contacts_frame_layout" style="@style/app_header_style">
+        <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/nearby_stations_modes_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:layout_gravity="center" android:id="@+id/history_toggle_history" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="History" style="@style/history_toggle_style" />
+            <RadioButton android:gravity="center" android:layout_gravity="center" android:id="@+id/history_toggle_contacts" android:layout_width="70.0dip" android:layout_height="wrap_content" android:checked="true" android:text="Contacts" style="@style/history_toggle_style" />
+        </RadioGroup>
+        <Button android:id="@+id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/parent_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:background="@color/brian_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_disclaimer" style="@style/WhiteTextShadow" />
+        <ListView android:id="@+id/list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/hopstop_light" android:gravity="center" android:layout_gravity="center" android:id="@+id/list_empty_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/NO_MATCHES_FOUND" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/ad_layout" />
+</LinearLayout>

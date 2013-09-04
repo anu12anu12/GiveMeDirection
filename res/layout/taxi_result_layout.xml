@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" style="@style/app_header_style">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/title_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxis" />
+        </LinearLayout>
+        <ImageButton android:textColor="@*android:color/white" android:gravity="right" android:layout_gravity="right|center" android:id="@+id/taxi_share_button" android:paddingTop="7.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share" style="@style/grey_button_style" />
+    </FrameLayout>
+    <ScrollView android:orientation="vertical" android:id="@+id/taxi_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/TaxiResultLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/step_total_tile" />
+            <include layout="@layout/results_divider" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/start_route" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/direction_a_img" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_marker_green" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:id="@+id/taxi_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="162 Madison Ave" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" style="@style/results_address_style" />
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/results_divider" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/end_route" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/direction_b_img" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_marker_red" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:id="@+id/taxi_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200 Madison Ave" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" style="@style/results_address_style" />
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/results_divider" />
+            <include layout="@layout/taxi_pound_layout" />
+            <include layout="@layout/results_divider" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/taxi_table_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" layout="@layout/taxi_disclaimer_layout" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

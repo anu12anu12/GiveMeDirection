@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/option" android:background="@color/page_white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/option_bar" android:clickable="true" style="@style/app_header_style">
+        <Button android:layout_gravity="left|center" android:id="@+id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/logo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="top|center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:id="@+id/option_title_bar" android:text="@string/option_mode_title" android:layout_below="@+id/logo" style="@style/TitleText" />
+        </LinearLayout>
+        <Button android:layout_gravity="right|center" android:id="@+id/done_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/grey_button_style" />
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/title_radio1" android:paddingLeft="5.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/options_radio_title1" style="@style/OptionTitleText" />
+            <RadioGroup android:orientation="vertical" android:id="@+id/radiogroup1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_below="@+id/title_radio1">
+                <com.hopstop.ui.SubwayRail android:id="@+id/subway" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subway_rail" />
+                <RadioButton android:id="@+id/bus_only" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bus_only" />
+                <RadioButton android:id="@+id/subway_rail_bus" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subway_rail_bus" />
+                <RadioButton android:id="@+id/walking_only" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/walking_only" />
+                <RadioButton android:id="@+id/taxi" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/taxi" />
+                <RadioButton android:id="@+id/bike" android:paddingLeft="40.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bike" />
+            </RadioGroup>
+            <TextView android:id="@+id/title_radio2" android:paddingLeft="5.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:text="@string/options_radio_title2" style="@style/OptionTitleText" />
+            <RadioGroup android:orientation="vertical" android:id="@+id/radiogroup2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_below="@+id/title_radio2">
+                <RadioButton android:id="@+id/more_transfers" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_transfers" />
+                <RadioButton android:id="@+id/more_walking" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more_walking" />
+            </RadioGroup>
+            <TextView android:textStyle="bold" android:id="@+id/title_radio3" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/options_radio_title3" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/rail_vehicle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regional_rail" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/regional_rails" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/express_buses" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/express_buses" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/private_vehicle" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/private_vehicles" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/other_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textStyle="bold" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="Other Options" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_route" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/smart_route" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/simplified_directions" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/simplified_directions" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wheel_chair_on" style="@style/options_toggle_text_style" />
+                    <ToggleButton android:id="@+id/wheel_chair" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:textOn="@string/toggle_on" android:textOff="@string/toggle_off" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:id="@+id/languages" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/LANGUAGES" android:layout_below="@+id/rail_vehicle" />
+            <Spinner android:id="@+id/language_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Chicago" android:prompt="@string/city_spinner_title" android:layout_weight="1.0" android:layout_below="@+id/languages" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_layout" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" style="@style/app_header_style">
+        <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/nearby_stations_modes_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:gravity="center" android:layout_gravity="center" android:id="@+id/nearby_stations_result_toggle_map" android:background="@drawable/toggle_tab_bg" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:button="@null" android:text="Map" style="@style/history_toggle_style" />
+            <RadioButton android:gravity="center" android:layout_gravity="center" android:id="@+id/nearby_stations_result_toggle_list" android:background="@drawable/toggle_tab_bg" android:layout_width="70.0dip" android:layout_height="wrap_content" android:button="@null" android:text="List" style="@style/history_toggle_style" />
+        </RadioGroup>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/nearby_stations_results_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/nearby_stations_results_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@+id/nearby_stations_results_error" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@+id/nearby_stations_results_list_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@+id/nearby_stations_results_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" style="@style/direction_list" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/nearby_stations_results_map_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.hopstop.ui.MapComponents.TapControlledMapView android:enabled="true" android:id="@+id/nearby_stations_results_map_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="07ujBZzhmxb1at4MzsZAkKZHKQwvg36_C74cS3g" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/ad_tab_layout" layout="@layout/ad_tab_layout" />
+</LinearLayout>

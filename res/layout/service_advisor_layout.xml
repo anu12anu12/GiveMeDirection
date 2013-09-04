@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/service_advisor_layout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/map_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SERVICE_ADVISOR" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/service_advisor" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:paddingTop="25.0dip" style="@style/ServiceAdvisorLayout">
+                    <Button android:id="@+id/subway_advisories_btn" android:text="@string/SUBWAY_ADVISORIES" style="@style/ServiceAdvisorButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/ServiceAdvisorLayout">
+                    <Button android:id="@+id/rail_advisories_btn" android:text="@string/RAIL_ADVISORIES" style="@style/ServiceAdvisorButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/ServiceAdvisorLayout">
+                    <Button android:id="@+id/bus_btn" android:text="@string/BUS_ADVISORIES" style="@style/ServiceAdvisorButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/ServiceAdvisorLayout">
+                    <Button android:text="@string/BRIDGES_AND_TUNNELS_ADVISORIES" style="@style/ServiceAdvisorButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="100.0dip" style="@style/ServiceAdvisorLayout">
+                <TextView android:textSize="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ADD_NEW_ADVISORIES_FEEDBACK" />
+                <Button android:id="@+id/add_advisories_feedback_btn" android:text="@string/SEND_FEEDBACK_BUTTON" style="@style/ServiceAdvisorButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

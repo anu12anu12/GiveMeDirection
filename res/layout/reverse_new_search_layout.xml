@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/reverse_new_search_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/reverse_new_search_layout_up_view" android:background="@drawable/direction_layout_border" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:layout_gravity="center" android:id="@+id/reverse_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reverse_trip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/results_blue_button_style" />
+        <Button android:layout_gravity="center" android:id="@+id/save_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_trip_prior_reverse" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/results_blue_button_style" />
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/new_search_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_search" android:layout_weight="2.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/results_blue_button_style" />
+        <LinearLayout android:id="@+id/pound_taxi_big_button" android:background="@drawable/results_pound_taxi_bg_selector" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/results_blue_button_style">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/results_pound_taxi_icon" />
+            <TextView android:textStyle="bold" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get Taxi*" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="9.5sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/results_pound_taxi_disclaimer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" android:text="@string/results_pound_taxi_disclaimer_star" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/reverse_new_search_layout_down_view" android:background="@drawable/direction_layout_border" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="#ff000000" android:id="@+id/save_trip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_trip_prior_reverse_text" />
+    </LinearLayout>
+</LinearLayout>

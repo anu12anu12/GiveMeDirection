@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/service_advisor_layout" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dimitare="http://schemas.android.com/apk/res/com.hopstop.mainmenu">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="1.0dip" android:layout_y="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/map_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TRANSIT_MAPS" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/interactive_map" android:background="@drawable/page_bg" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/boston_mbta_subway" android:text="Boston MBTA" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/chicago_cta_btn" android:text="@string/CHICAGO_CTA_LABEL" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/london_underground_btn" android:text="@string/LONDON_UNDERGROUND" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/nyc_subway_btn" android:text="@string/NYC_SUBWAY_MAP" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/nyc_bus_manhattan_btn" android:text="@string/NYC_BUS_MANHATTAN_NAME" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/san_francisco_bart_btn" android:text="@string/SAN_FRANCISCO_BART" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout style="@style/InteractiveMap">
+                    <Button android:id="@+id/washington_wmata_btn" android:text="@string/WASHINGTON_WMATA_LABEL" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/InteractiveMap">
+                    <Button android:id="@+id/chicago_metra_btn" android:text="@string/CHICAGO_METRA" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/InteractiveMap">
+                    <Button android:id="@+id/metro_north_railroad_btn" android:text="@string/METRO_NORTH_RAILROAD" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" style="@style/InteractiveMap">
+                    <Button android:id="@+id/long_island_railroad_btn" android:text="@string/LONG_ISLAND_RAILROAD" style="@style/InteractiveMapButton" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" style="@style/ServiceAdvisorLayout">
+                    <TextView android:textSize="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ADD_NEW_TRANSITMAPS_FEEDBACK" />
+                    <Button android:id="@+id/send_feedback_btn" android:text="@string/SEND_FEEDBACK_BUTTON" style="@style/ServiceAdvisorButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

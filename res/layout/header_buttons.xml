@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/app_header_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+        <TextView android:textColor="#ffffffff" android:id="@+id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:layout_gravity="right|center" android:id="@+id/header_right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="right" />
+    <Button android:layout_gravity="left|center" android:id="@+id/header_left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="left" />
+</FrameLayout>

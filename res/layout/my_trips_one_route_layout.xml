@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/single_trip" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1" android:shrinkColumns="1">
+        <TableRow>
+            <TextView android:textStyle="bold" android:textColor="@*android:color/black" android:id="@+id/trip_name_label" android:paddingLeft="10.0dip" android:text="Name:" />
+            <TextView android:textStyle="bold" android:textColor="@*android:color/black" android:id="@+id/trip_name" android:paddingLeft="10.0dip" android:text="trip name" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:id="@+id/starting_address_A" android:padding="3.0dip" android:src="@drawable/search_marker_green" />
+            <TextView android:textColor="@*android:color/black" android:id="@+id/start_addr" android:padding="3.0dip" android:text="start address" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:id="@+id/starting_to_end_arrow" android:padding="3.0dip" android:src="@drawable/my_trips_a_to_b_arrow" />
+        </TableRow>
+        <TableRow>
+            <ImageView android:id="@+id/end_address_b" android:padding="3.0dip" android:src="@drawable/search_marker_red" />
+            <TextView android:textColor="@*android:color/black" android:id="@+id/end_addr" android:padding="3.0dip" android:text="end address" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/view_route_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="View Route" />
+        <Button android:id="@+id/new_search_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Search Again" />
+        <Button android:id="@+id/delete_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Delete" />
+    </LinearLayout>
+    <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

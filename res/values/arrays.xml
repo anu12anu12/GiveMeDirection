@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="cities_array">
+        <item>Adelaide</item>
+        <item>Akron</item>
+        <item>Albany/Rensselaer/Troy</item>
+        <item>Albuquerque</item>
+        <item>Allentown / Lehigh</item>
+        <item>Ann Arbor</item>
+        <item>Asheville, NC</item>
+        <item>Atlanta</item>
+        <item>Auckland, NZ</item>
+        <item>Austin</item>
+        <item>Bakersfield, CA</item>
+        <item>Baltimore</item>
+        <item>Bellingham, WA</item>
+        <item>Bend, OR</item>
+        <item>Birmingham, AL</item>
+        <item>Blacksburg, VA</item>
+        <item>Bloomington, IN</item>
+        <item>Boston (Eastern MA)</item>
+        <item>Buffalo / Niagara</item>
+        <item>Burlington, VT</item>
+        <item>Butte, MT</item>
+        <item>Calgary</item>
+        <item>Canberra</item>
+        <item>Charlotte</item>
+        <item>Chicago</item>
+        <item>Christchurch, NZ</item>
+        <item>Cincinnati</item>
+        <item>Clemson, SC</item>
+        <item>Cleveland</item>
+        <item>Columbus, OH</item>
+        <item>Dallas / Ft. Worth</item>
+        <item>Denver/Boulder/Co. Springs</item>
+        <item>Detroit</item>
+        <item>Dover / Wilmington</item>
+        <item>Edmonton</item>
+        <item>El Paso, TX</item>
+        <item>Eugene / Corvallis</item>
+        <item>Flagstaff, AZ</item>
+        <item>Fort Wayne, IN</item>
+        <item>Frederick County, MD</item>
+        <item>Fredericton, NB</item>
+        <item>Fresno/Madera/Visalia</item>
+        <item>Gainesville, FL</item>
+        <item>Green Bay/Appleton/Oshkosh</item>
+        <item>Halifax</item>
+        <item>Hamilton, ON</item>
+        <item>Hartford</item>
+        <item>Honolulu</item>
+        <item>Houston</item>
+        <item>Huntsville, AL</item>
+        <item>Indianapolis</item>
+        <item>Jackson Hole, WY</item>
+        <item>Jacksonville</item>
+        <item>Kansas City</item>
+        <item>Kingsport, TN</item>
+        <item>Kitchener-Waterloo</item>
+        <item>La Crosse, WI</item>
+        <item>Lansing, MI</item>
+        <item>Las Vegas</item>
+        <item>Lexington, KY</item>
+        <item>Little Rock</item>
+        <item>London</item>
+        <item>Long Island</item>
+        <item>Los Angeles</item>
+        <item>Louisville</item>
+        <item>Lubbock, TX</item>
+        <item>Lynchburg, VA</item>
+        <item>Madison, WI</item>
+        <item>Manchester, UK</item>
+        <item>Memphis</item>
+        <item>Mendocino/Ft. Bragg/Eureka</item>
+        <item>Metro North Area</item>
+        <item>Miami / South Florida</item>
+        <item>Milwaukee</item>
+        <item>Minneapolis / St. Paul</item>
+        <item>Missoula, MT</item>
+        <item>Montreal</item>
+        <item>Morgantown, WV</item>
+        <item>Moscow</item>
+        <item>Myrtle Beach / Florence</item>
+        <item>Nashua, NH</item>
+        <item>Nashville</item>
+        <item>New Jersey</item>
+        <item>New Orleans</item>
+        <item>New York</item>
+        <item>Newport News / Hampton</item>
+        <item>Norfolk/VA.Beach/Chesapeake</item>
+        <item>Oklahoma City</item>
+        <item>Omaha</item>
+        <item>Orange County, CA</item>
+        <item>Orlando</item>
+        <item>Ottawa</item>
+        <item>Palm Springs, CA</item>
+        <item>Paris</item>
+        <item>Perth</item>
+        <item>Philadelphia</item>
+        <item>Phoenix/Scottsdale/Mesa</item>
+        <item>Pittsburgh</item>
+        <item>Portland / Salem (OR)</item>
+        <item>Portland, ME</item>
+        <item>Portsmouth / Dover (NH)</item>
+        <item>Providence</item>
+        <item>Quebec City</item>
+        <item>Queensland</item>
+        <item>Raleigh/Durham/Chapel Hill</item>
+        <item>Redding/Red Bluff/Shasta</item>
+        <item>Rennes, FR</item>
+        <item>Reno / Tahoe / Truckee</item>
+        <item>Richmond, VA</item>
+        <item>Rochester, NY</item>
+        <item>Sacramento / Davis</item>
+        <item>Saint Petersburg, RUS</item>
+        <item>Salt Lake City/Provo/Ogden</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>San Francisco Bay Area</item>
+        <item>San Luis Obispo</item>
+        <item>Santa Barbara</item>
+        <item>Sarasota / Bradenton</item>
+        <item>Saskatoon</item>
+        <item>Sault Ste. Marie, ON</item>
+        <item>Savannah, GA</item>
+        <item>Seattle/Tacoma/Olympia</item>
+        <item>Southwest Oregon</item>
+        <item>Spokane, WA</item>
+        <item>Springfield (Western MA)</item>
+        <item>St Louis</item>
+        <item>St. George / Zion (UT)</item>
+        <item>"St. John's, Newfoundland"</item>
+        <item>State College, PA</item>
+        <item>Stockton/Modesto/Tracy</item>
+        <item>Strasbourg, FR</item>
+        <item>Sydney</item>
+        <item>Syracuse/Oswego/Utica</item>
+        <item>Tampa/St. Pete/Clearwater</item>
+        <item>Thunder Bay, ON</item>
+        <item>Topeka, KS</item>
+        <item>Toronto / Brampton</item>
+        <item>Vancouver, BC</item>
+        <item>Ventura / Oxnard (CA)</item>
+        <item>Victoria, BC</item>
+        <item>Walla Walla, WA</item>
+        <item>Washington, DC</item>
+        <item>Wellington, NZ</item>
+        <item>Western Maryland</item>
+        <item>Wilmington, NC</item>
+        <item>Winnipeg</item>
+        <item>Yuma, AZ</item>
+    </string-array>
+    <string-array name="url_cities_array">
+        <item>adelaide</item>
+        <item>akron</item>
+        <item>albany</item>
+        <item>albuquerque</item>
+        <item>allentown</item>
+        <item>annarbor</item>
+        <item>asheville</item>
+        <item>atlanta</item>
+        <item>auckland</item>
+        <item>austin</item>
+        <item>bakersfield</item>
+        <item>baltimore</item>
+        <item>bellingham</item>
+        <item>bendor</item>
+        <item>birmingham</item>
+        <item>blacksburg</item>
+        <item>bloomington</item>
+        <item>boston</item>
+        <item>buffalo</item>
+        <item>burlington</item>
+        <item>butte</item>
+        <item>calgary</item>
+        <item>canberra</item>
+        <item>charlotte</item>
+        <item>chicago</item>
+        <item>christchurch</item>
+        <item>cincinnati</item>
+        <item>clemson</item>
+        <item>cleveland</item>
+        <item>columbus</item>
+        <item>dallas</item>
+        <item>denver</item>
+        <item>detroit</item>
+        <item>delaware</item>
+        <item>edmonton</item>
+        <item>elpaso</item>
+        <item>eugene</item>
+        <item>flagstaff</item>
+        <item>fortwayne</item>
+        <item>frederick</item>
+        <item>fredericton</item>
+        <item>fresno</item>
+        <item>gainesville</item>
+        <item>greenbay</item>
+        <item>halifax</item>
+        <item>hamilton</item>
+        <item>hartford</item>
+        <item>honolulu</item>
+        <item>houston</item>
+        <item>huntsville</item>
+        <item>indianapolis</item>
+        <item>jacksonhole</item>
+        <item>jacksonville</item>
+        <item>kansascity</item>
+        <item>kingsport</item>
+        <item>waterloo</item>
+        <item>lacrosse</item>
+        <item>lansing</item>
+        <item>lasvegas</item>
+        <item>lexington</item>
+        <item>littlerock</item>
+        <item>london</item>
+        <item>longisland</item>
+        <item>losangeles</item>
+        <item>louisville</item>
+        <item>lubbock</item>
+        <item>lynchburg</item>
+        <item>madison</item>
+        <item>manchester</item>
+        <item>memphis</item>
+        <item>mendocino</item>
+        <item>metronorth</item>
+        <item>miami</item>
+        <item>milwaukee</item>
+        <item>minneapolis</item>
+        <item>missoula</item>
+        <item>montreal</item>
+        <item>morgantown</item>
+        <item>moscow</item>
+        <item>myrtlebeach</item>
+        <item>nashua</item>
+        <item>nashville</item>
+        <item>newjersey</item>
+        <item>neworleans</item>
+        <item>newyork</item>
+        <item>newportnews</item>
+        <item>norfolk</item>
+        <item>oklahomacity</item>
+        <item>omaha</item>
+        <item>orangecounty</item>
+        <item>orlando</item>
+        <item>ottawa</item>
+        <item>palmsprings</item>
+        <item>paris</item>
+        <item>perth</item>
+        <item>philadelphia</item>
+        <item>phoenix</item>
+        <item>pittsburgh</item>
+        <item>portland</item>
+        <item>portlandme</item>
+        <item>portsmouth</item>
+        <item>rhodeisland</item>
+        <item>quebeccity</item>
+        <item>queensland</item>
+        <item>raleigh</item>
+        <item>redding</item>
+        <item>rennes</item>
+        <item>reno</item>
+        <item>richmond</item>
+        <item>rochester</item>
+        <item>sacramento</item>
+        <item>stpetersburg</item>
+        <item>saltlakecity</item>
+        <item>sanantonio</item>
+        <item>sandiego</item>
+        <item>sanfrancisco</item>
+        <item>sanluisobispo</item>
+        <item>santabarbara</item>
+        <item>sarasota</item>
+        <item>saskatoon</item>
+        <item>saultstemarie</item>
+        <item>savannah</item>
+        <item>seattle</item>
+        <item>sworegon</item>
+        <item>spokane</item>
+        <item>springfieldma</item>
+        <item>stlouis</item>
+        <item>stgeorge</item>
+        <item>stjohns</item>
+        <item>statecollege</item>
+        <item>stockton</item>
+        <item>strasbourg</item>
+        <item>sydney</item>
+        <item>syracuse</item>
+        <item>tampa</item>
+        <item>thunderbay</item>
+        <item>topeka</item>
+        <item>toronto</item>
+        <item>vancouver</item>
+        <item>ventura</item>
+        <item>victoria</item>
+        <item>wallawalla</item>
+        <item>washington</item>
+        <item>wellington</item>
+        <item>westernmaryland</item>
+        <item>wilmington</item>
+        <item>winnipeg</item>
+        <item>yuma</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Russian</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Italian</item>
+        <item>Swahili</item>
+    </string-array>
+</resources>

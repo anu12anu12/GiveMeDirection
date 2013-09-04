@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/direction_step" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <LinearLayout android:orientation="vertical" android:id="@+id/direction_step_left" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.5">
+                <ImageView android:id="@+id/direction_a_img_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:id="@+id/direction_a_img_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reroute_button" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/direction_relative_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.5">
+                <TextView android:textSize="15.0sp" android:textColor="#ff6e6e6e" android:id="@+id/direction_lenght_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textStyle="italic" android:textColor="#ff6e6e6e" android:id="@+id/direction_label_other_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/direction_step_right" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <TextView android:textColor="#ff909090" android:gravity="center_vertical" android:id="@+id/direction_travel_time" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1.0" />
+                <com.hopstop.ui.ChevronImageView android:id="@+id/arrow_to_right" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/results_arrow_selector" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/diversion_view" android:background="#fff4e5e5" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip">
+            <ImageView android:id="@+id/diversion_img" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/results_info" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/diversion_text_container" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffcc4040" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Planned Service Changes" style="@style/text_shadow_white_down" />
+                <TextView android:textColor="#ff545454" android:id="@+id/diversion_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/diversion_text" style="@style/text_shadow_white_down" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/reverse_new_search_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dir_map_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/dir_map_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="Maps" style="@style/results_map_yext_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/results_text_color" android:id="@+id/dir_map_text" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center" android:id="@+id/dir_map_img" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/dir_map_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/map_load" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/single_taxi" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:paddingLeft="11.0dip" android:paddingTop="8.0dip" android:paddingRight="11.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textColor="#ff6e6e6e" android:id="@+id/taxi_name" android:text="taxi name" />
+            <TextView android:textColor="#ff6e6e6e" android:gravity="right" android:id="@+id/taxi_price" android:text="taxi price" />
+        </TableRow>
+        <TableRow android:paddingTop="6.0dip">
+            <TextView android:textColor="#ff6e6e6e" android:autoLink="phone" android:id="@+id/taxi_phone" android:text="taxi phone" />
+            <TextView android:textColor="#ff6e6e6e" android:gravity="right" android:id="@+id/taxi_empty" />
+        </TableRow>
+    </TableLayout>
+    <include layout="@layout/results_divider" />
+</LinearLayout>

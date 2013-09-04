@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/title_bar" style="@style/app_header_style"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/widget30" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/logo" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_logo_small" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nearby Stations" />
+        </LinearLayout>
+        <Button android:layout_gravity="right|center" android:id="@+id/nearby_stations_request_go_btn" android:text="Go" style="@style/search_blue_button_style" />
+    </FrameLayout>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:isScrollContainer="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/top_input" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/address_bar_style">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/address" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" style="@style/address_input_container_style">
+                    <EditText android:id="@+id/nearby_stations_address_textbox" android:hint="Address" android:imeOptions="actionDone" style="@style/address_input_style" />
+                    <ImageView android:id="@+id/nearby_stations_address_icon" android:src="@drawable/search_marker_green" style="@style/address_input_pin_style" />
+                    <ImageView android:id="@+id/nearby_stations_address_history" android:layout_toLeftOf="@+id/nearby_stations_address_location" style="@style/address_input_contact" />
+                    <ImageView android:id="@+id/nearby_stations_address_location" android:layout_alignParentRight="true" style="@style/address_input_location" />
+                </RelativeLayout>
+                <LinearLayout android:id="@+id/nearby_stations_spinner_linearlayout" android:layout_width="fill_parent" style="@style/city_county_container_style">
+                    <Spinner android:id="@+id/nearby_stations_city_spinner" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/city_style" />
+                    <Spinner android:id="@+id/nearby_stations_country_spinner" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/county_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/options_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/bottom_options_style">
+                <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/nearby_stations_modes_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <com.hopstop.ui.RadioButtonCenter android:id="@+id/nearby_stations_modes_a" android:background="@drawable/nearby_stations_modes_bg" android:layout_marginRight="5.0dip" android:checked="true" android:button="@drawable/icon_mode_subway_or_bus" style="@style/stations_mode_style" />
+                    <com.hopstop.ui.RadioButtonCenter android:id="@+id/nearby_stations_modes_s" android:background="@drawable/nearby_stations_modes_bg" android:layout_marginRight="5.0dip" android:button="@drawable/icon_mode_subway" style="@style/stations_mode_style" />
+                    <com.hopstop.ui.RadioButtonCenter android:id="@+id/nearby_stations_modes_b" android:background="@drawable/nearby_stations_modes_bg" android:button="@drawable/icon_mode_bus" style="@style/stations_mode_style" />
+                </RadioGroup>
+                <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:background="@drawable/stations_grey_button_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="91.0dip" android:layout_marginTop="20.0dip">
+                    <LinearLayout android:id="@+id/max_stations_texts" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maximum Number of Stations" style="@style/text_shadow_black_up" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@*android:color/white" android:id="@+id/nearby_stations_max_stations_number_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="5" style="@style/text_shadow_black_up" />
+                    </LinearLayout>
+                    <SeekBar android:id="@+id/nearby_stations_max_stations_seek_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:max="8" android:progress="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/ad_tab_layout" />
+</LinearLayout>

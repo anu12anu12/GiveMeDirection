@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android2:layout_width="wrap_content" android2:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android1="http://schemas.android.com/apk/res/android"
+  xmlns:android2="http://schemas.android.com/apk/res/android">
+    <ImageView android2:id="@+id/map_vehicle_icon_bg_imageview" android2:paddingLeft="7.0dip" android2:paddingBottom="7.0dip" android2:layout_width="wrap_content" android2:layout_height="wrap_content" android2:src="@drawable/map_vehicle_icon_bg"  />
+    <ImageView android2:layout_gravity="bottom" android2:id="@+id/map_circle_imageview" android2:layout_width="wrap_content" android2:layout_height="wrap_content" android2:src="@drawable/map_circle" />
+    <LinearLayout android2:gravity="center" android2:layout_gravity="center" android2:orientation="vertical" android2:id="@+id/map_layout_view" android2:layout_width="fill_parent" android2:layout_height="fill_parent" android2:adjustViewBounds="true" >
+        <ImageView android2:layout_gravity="center" android2:id="@+id/map_layout_imageview" android2:layout_width="25.0dip" android2:layout_height="25.0dip" android2:scaleType="fitCenter" />
+    </LinearLayout>
+</FrameLayout>

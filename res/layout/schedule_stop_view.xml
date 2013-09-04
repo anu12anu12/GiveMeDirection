@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/hopstop_header" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/schedules_station_bar" android:background="@color/schedules_bar_color" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:id="@+id/title_from_to" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ShadowForBlackText" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/brian_gray" android:id="@+id/title_from_to_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ShadowForBlackText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:indeterminate="true" />
+        <ListView android:id="@+id/schedules_result_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+        <TextView android:id="@+id/content_not_available_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@+id/ads" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ad_tab_layout" />
+</LinearLayout>
